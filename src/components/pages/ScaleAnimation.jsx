@@ -44,12 +44,8 @@ const ScaleAnimation = () => {
 
   const [activeIndex, setActiveIndex] = useState(0)
 
-
   useEffect(() => {
-
     gsap.registerPlugin(ScrollToPlugin, ScrollTrigger)
-
-
 
     let ctx = gsap.context(() => {
       gsap.to('.parent-container', {
@@ -60,7 +56,7 @@ const ScaleAnimation = () => {
           end: `400% bottom`,
           pinSpacing: true,
           scrub: 1,
-          snap: 1 / 3,
+          // snap: 1 / 3,
           onUpdate: (self) => {
             console.log(self.progress)
 
@@ -134,7 +130,9 @@ const ScaleAnimation = () => {
   return (
     <Fragment>
 
-      <div className='h-screen w-full bg-[#808080]' />
+      <div className='h-screen w-full bg-green-600 flex items-center justify-center'>
+        <h1 className='lg:text-6xl text-4xl font-medium text-white'>Scroll Down</h1>
+      </div>
       {/* Animation Frame */}
       <div className='lg:p-10 p-5 parent-container'>
 
