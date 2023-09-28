@@ -52,8 +52,8 @@ const ScaleAnimation = () => {
         scrollTrigger: {
           trigger: '.parent-container',
           pin: '.parent-container',
-          start: 'top 5%',
-          end: `400% bottom`,
+          start: 'top 7%',
+          end: `250% bottom`,
           pinSpacing: true,
           scrub: 1,
           // snap: 1 / 3,
@@ -204,6 +204,10 @@ const ScaleAnimation = () => {
 
         </div>
 
+      </div>
+
+      <div className='h-screen w-full bg-green-600 flex items-center justify-center'>
+        <h1 className='lg:text-6xl text-4xl font-medium text-white'>Bye Now</h1>
       </div>
 
 
