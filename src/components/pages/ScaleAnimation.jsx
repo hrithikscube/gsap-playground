@@ -1,9 +1,7 @@
-import React, { Fragment, useEffect, useState } from 'react'
-//gsap imports 
-
 import gsap from 'gsap/dist/gsap'
-import { ScrollToPlugin } from 'gsap/dist/ScrollToPlugin'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
+import { ScrollToPlugin } from 'gsap/dist/ScrollToPlugin'
+import React, { Fragment, useEffect, useState } from 'react'
 
 const cardStyles = {
   borderRadius: '12px',
