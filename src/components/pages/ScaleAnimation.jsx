@@ -136,18 +136,18 @@ const ScaleAnimation = () => {
 
         <div className='background-inkblue p-5 rounded-xl grid grid-cols-2 items-center px-10 animation-frame'>
           {/* Animate frame */}
-          <div className='border border-dashed border-white rounded-full w-[500px] h-[500px] bg-transparent flex items-center justify-center animation-frame' >
-            <div className='border border-dashed border-white rounded-full w-[400px] h-[400px] bg-transparent flex items-center justify-center '>
-              <div className='border border-dashed border-white rounded-full w-[300px] h-[300px] bg-transparent flex items-center justify-center relative' >
+          <div className='border border-dashed border-[#FEBC13A6] rounded-full w-[500px] h-[500px] bg-transparent flex items-center justify-center animation-frame' >
+            <div className='border border-dashed border-[#FEBC13A6] rounded-full w-[400px] h-[400px] bg-transparent flex items-center justify-center '>
+              <div className='border border-dashed border-[#FEBC13A6] rounded-full w-[300px] h-[300px] bg-transparent flex items-center justify-center relative' >
 
                 {React.Children.toArray(iconsArray.map((item, index) => (
                   <img
                     src={activeIndex === index ? item.activeIcon : item.icon}
                     alt={item.icon}
-                    className={`w-[45px] h-[45px] ${item.position} ${activeIndex === index ? 'scale-[1.8] transition-all duration-700' : 'scale-1 transition-all duration-700'}`} />
+                    className={`w-[45px] h-[45px] ${item.position} ${activeIndex === index ? 'scale-[2.3] transition-all duration-700' : 'scale-1 transition-all duration-700'}`} />
                 )))}
 
-                <div className='border  border-dashed border-white rounded-full w-[200px] h-[200px] bg-transparent flex items-center justify-center' >
+                <div className='border  border-dashed border-[#FEBC13A6] rounded-full w-[200px] h-[200px] bg-transparent flex items-center justify-center' >
 
                 </div>
 
